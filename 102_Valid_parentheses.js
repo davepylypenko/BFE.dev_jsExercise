@@ -28,3 +28,15 @@ function validate(str) {
   }
   return stack.length == 0 ? true: false
 }
+
+validate('{}[]()') 
+// true
+
+validate('{[()]}') 
+// true
+
+validate('{[}]') 
+// false
+
+validate('{}}') 
+// false
